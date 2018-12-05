@@ -1,0 +1,296 @@
+body{
+ overflow:auto;
+ font-family:courier;
+}
+
+p{
+  color:#660066;
+  text-align:center;
+}
+
+.container{
+  background-color:rgba(200,200,200,0.5);
+  position:relative; /*relative position*/
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+#overlay{
+  position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0001);
+    z-index: 2;
+}
+
+#logo{
+  position:relative;
+}
+
+#name{
+    position:relative;
+    top:80px;
+    left:90px;
+    font-size:80px;
+    height:80px;
+    background-color:white;
+    color:#660066;
+    text-align:left
+}
+
+#header{
+  display:flex;
+  position:relative;
+  height:80px;
+  display:block;
+  top:-80px;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+nav{
+ position:relative;
+ background-color:rgba(153,0,153, 0.5);/*This background-color overrides the one for id called NAME*/
+ height:80px;
+ float:right;
+ top:-85px;
+ bottom:0;
+ left:0;width:60%;
+ right:0;
+}
+
+nav>ul{
+  text-align:center;
+  float:right;
+  margin-top:30px;
+}
+
+nav>ul>li{
+  display:inline-block;
+  margin:auto;
+}
+
+nav>ul>li>a{
+  color:rgba(153,204,255, 0.9999);
+  margin:50px;
+  text-decoration:none;
+  font-size:24px;
+  text-transform:uppercase;
+}
+
+nav>ul>li>a:hover{
+  background-color:rgba(200, 200, 200, 0.8);
+  color:black;
+}
+
+nav>ul>li>a:visited{
+  background-color:rgba(20, 20, 20, 0.5);
+  color:black;
+}
+
+#banner,#about,#service,#categories,.categories{
+  position:relative;
+  display:flex;
+  top:-165px;
+  flex-direction:column;
+  background-color:rgba(220,0, 0, 0.5);
+  margin:auto;
+  padding:20px;
+  margin-top:20px;
+  height:1000px;
+  width:100%;
+  box-sizing:content-box;
+  box-shadow:0 5px 5px grey;
+  position:relative;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+}
+
+#banner{
+  background-image:url("http://www.robedumariage.com/images/v3/2014/menu/cate7.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  bottom:0;
+  font-size:40px;
+  color:#660066;
+}
+
+#about{font-size:30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;background-image:url("https://www.mariage.com/wp-content/uploads/bfi_thumb/10-conseils-pour-choisir-ses-alliances-matcac71dzn1ovgvnh7codu4tgtreoul9dmcmjfney.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:rgba(220,55, 0, 0.5);
+  box-sizing:border-box;
+}
+
+#about>div,#service>div{
+  padding:30px;
+  border:2px solid white;
+  border-radius:50px;
+  background-color:rgba(255,255,0,0.5);
+  text-align: center;
+  height: 70%;
+  width: 600px;
+  margin: 10px;
+  display:inline-block;
+}
+
+#service>div{
+  height: 25%;
+  width: 35%;
+  justify-content:space-around;
+}
+
+#service p,#service h4,#about p{
+  display:inline-block;
+}
+
+#about p{
+  width:50%;
+}
+
+#service{
+  background-image:url("https://pureactu.com/wp-content/uploads/2016/07/tenues-traditionnelles-4.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:center;
+  box-sizing:border-box;
+  background-color:rgba(220,55,0,0.5);
+}
+
+#categories{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOgcXqliXcf54mc7nutzM-H60SoSPjF7s6ZNuvwkThxg1C3-0-");
+  background-repeat:no-repeat;
+  background-size:cover;
+  box-sizing:border-box;
+}
+
+#categories>ul>li{
+  display:block;
+  border-radius:20px;
+  margin:50px;
+  width:600px;
+  height:60px;
+  border:2px solid white;
+  background-color:rgba(220,155, 0, 0.5);
+}
+
+#categories>ul>li>a{
+  font-size:40px;
+  text-decoration:none;
+  text-align:center;
+  color:#660066;
+}
+
+.categories{
+  height:18200px;
+  display:flex;
+  align-items:stretch;
+  flex-direction:column;
+  box-sizing:border-box;
+  background-color:#FF66FF;
+  background-image:url("https://pureactu.com/wp-content/uploads/2016/07/tenues-traditionnelles-2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+h3{
+   font-size:60px;
+ }
+
+h2{
+   font-size:40px;
+ }
+
+h1{
+  font-size:70px;
+}
+
+h1,h2,h3,h4{
+  color:#660066;
+}
+
+section>div{
+  box-sizing:border-box;
+  background-color:rgba(153,204,255, 0.7);
+  align-items:center;
+  text-align:center;
+  height: 2000px;
+  margin:auto;
+}
+
+#american{
+  height:1600px;
+}
+
+#mixed,#european{
+  height:2500Px
+}
+#asian{
+  height:3500px;
+}
+
+#african{
+  height:7000px;
+}
+
+section>div>div p{
+  display:inline-block;width:50%;
+}
+#egypt>div{
+  display:inline-block;
+}
+section>div>div{
+  box-sizing:border-box;
+  background-color: white;
+  text-align: center;
+  height: 1000px;
+  width: 90%;
+  margin:auto;
+}
+
+section>div>div div{
+  display:inline-block;
+}
+
+table,th,tr,td{
+  padding:5px;
+  border:1px solid black;
+  border-collapse:collapse;
+}
+
+footer{position:relative;top:-160px;
+  background-color:rgba(0, 0, 0, 0.5);
+  position:relative;
+  height:200px;
+  width:100%;
+  display:inline-block;
+  bottom:0;left:0;
+  text-align:center;
+}
+
+@media only screen and (min-width:vw){
+  body{
+       font-size:40px;
+       position:relative;
+       display:flex;
+      }
+
+}
